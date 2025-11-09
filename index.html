@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Eberhardt</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("TNsYGa4cb50qoVu1x"); // substitua pela sua public key do EmailJS
+        })();
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="logo">Junior Eberhardt</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+        <h1>Bem-vindo ao meu Portfólio</h1>
+        <p>Landing Page moderna com Dark Mode e animações suaves</p>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="section">
+        <h2>Sobre Mim</h2>
+        <p>Desenvolvedor web apaixonado por design moderno e experiências interativas.</p>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projetos" class="section">
+        <h2>Projetos</h2>
+        <div class="cards">
+            <div class="card">Projeto 1</div>
+            <div class="card">Projeto 2</div>
+            <div class="card">Projeto 3</div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="status-msg"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
